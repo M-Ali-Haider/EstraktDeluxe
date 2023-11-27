@@ -1,0 +1,67 @@
+@font-face {font-family: heathergreen;src: url(assets/fonts/Heathergreen.woff);}
+@font-face {font-family: schabo;src: url(assets/fonts/schabo.woff);}
+@font-face {font-family: gothamNeedsMe;src: url(assets/fonts/GothamBold.woff);}
+@font-face {font-family: Hanson;src: url(assets/fonts/Hanson700.otf);}
+header{
+    position: fixed;
+    background-color: #0B0B0B;;
+    height: 10%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.header-helper{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bm-l{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+.header-helper input{
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: #AEAEAE;
+    background-color: #282424;
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+}
+.h-input-div{
+    height: 45%;
+    width: 30%;
+}
+.header-helper input:focus{
+    outline: none;
+}
+.bm{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.h-logo{
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+@media (min-width:700px){
+    .header-helper input{
+        font-size: 15px;
+        padding-left: 15px;
+        width: 70%;
+    }
+}
